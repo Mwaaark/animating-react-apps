@@ -9,15 +9,6 @@ const animationTiming = {
 };
 
 const modal = (props) => {
-  //   const cssClasses = [
-  //     "Modal",
-  //     state === "entering"
-  //       ? "ModalOpen"
-  //       : state === "exiting"
-  //       ? "ModalClosed"
-  //       : null,
-  //   ];
-
   return (
     <CSSTransition
       mountOnEnter
@@ -31,7 +22,6 @@ const modal = (props) => {
         exitActive: "ModalClosed",
       }}
     >
-      {/* <div className={cssClasses.join(" ")}> */}
       <div className="Modal">
         <h1>A Modal</h1>
         <button className="Button" onClick={props.closed}>
